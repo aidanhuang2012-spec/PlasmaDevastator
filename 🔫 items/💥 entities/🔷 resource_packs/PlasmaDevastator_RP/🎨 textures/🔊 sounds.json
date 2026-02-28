@@ -1,0 +1,10 @@
+{
+  "plasma.fire": {
+    "sounds": [
+      {
+        "name": "sounds/plasma_fire",
+        "volume": 1
+      }
+    ]
+  }
+}
