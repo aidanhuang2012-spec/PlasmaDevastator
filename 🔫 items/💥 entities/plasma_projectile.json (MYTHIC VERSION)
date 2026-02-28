@@ -1,0 +1,49 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "plasma:projectile",
+      "is_spawnable": false,
+      "is_summonable": false
+    },
+    "components": {
+      "minecraft:projectile": {
+        "gravity": 0,
+        "power": 3,
+        "particle": "plasma:beam_trail",
+        "on_hit": {
+          "impact_damage": {
+            "damage": 50,
+            "knockback": true
+          },
+          "run_command": {
+            "command": [
+
+              "playsound plasma.fire @a[r=40] ~ ~ ~ 1 0.6",
+
+              "particle plasma:blackhole ~ ~ ~",
+              "effect @e[r=10] slowness 2 4 true",
+              "tp @e[r=8] ~ ~ ~ facing @s",
+
+              "camera shake add @a[r=15] 0.8 0.5",
+
+              "summon lightning_bolt ~1 ~ ~",
+              "summon lightning_bolt ~-1 ~ ~",
+              "summon lightning_bolt ~ ~ ~1",
+              "summon lightning_bolt ~ ~ ~-1",
+
+              "particle plasma:shockwave ~ ~ ~",
+              "particle plasma:distortion ~ ~ ~",
+              "particle minecraft:huge_explosion_emitter ~ ~ ~",
+
+              "effect @e[r=10] blindness 5 1 true",
+              "effect @e[r=10] nausea 5 1 true",
+
+              "camera shake add @a[r=20] 1.5 0.7"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
