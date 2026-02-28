@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Plasma Devastator BP",
+    "description": "Mythic Sci-Fi Railgun",
+    "uuid": "5a1c7a10-3d7e-4c5a-91e2-111111111111",
+    "version": [1,0,0],
+    "min_engine_version": [1,20,0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "8b2c8e20-4e8f-4d6b-92f3-222222222222",
+      "version": [1,0,0]
+    }
+  ]
+}
